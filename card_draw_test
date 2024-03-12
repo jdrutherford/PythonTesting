@@ -4,7 +4,7 @@ hand = []
 
 def draw_card(num):
     for i in range(int(float(num))) :
-      hand.append([deck.pop(0)])
+        hand.append([deck.pop(0)])
     print_cards()
 
 def print_cards():
@@ -20,12 +20,13 @@ print(f"Shuffled Deck: {deck}")
 print()
 
 while len(deck) > 0:
- draw_count = input("How many cards to draw? ")
- if draw_count == "" :
-  print("That's not a number of cards.")
- elif int(str(draw_count)) > len(deck) :
-     print(f"The deck has less than {draw_count} cards" ) 
- else: draw_card(int(float(draw_count)))
+    draw_count = input("How many cards to draw? ")
+        if draw_count == "" :
+            print("That's not a number of cards.")
+        elif int(str(draw_count)) > len(deck) :
+            print(f"The deck has less than {draw_count} cards" ) 
+        else:
+            draw_card(int(float(draw_count)))
 else:
- print("The deck is now empty")
+    print("The deck is now empty")
 
