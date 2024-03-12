@@ -21,12 +21,12 @@ print()
 
 while len(deck) > 0:
     draw_count = input("How many cards to draw? ")
-        if draw_count == "" :
-            print("That's not a number of cards.")
-        elif int(str(draw_count)) > len(deck) :
-            print(f"The deck has less than {draw_count} cards" ) 
-        else:
-            draw_card(int(float(draw_count)))
+    if draw_count == "" :
+        print("That's not a number of cards.")
+    elif int(str(draw_count)) > len(deck) :
+        print(f"The deck has less than {draw_count} cards" ) 
+    else:
+        draw_card(int(float(draw_count)))
 else:
     print("The deck is now empty")
 
