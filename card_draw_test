@@ -4,7 +4,7 @@ hand = []
 
 def draw_card(num):
     for i in range(int(float(num))) :
-        hand.append([deck.pop(0)])
+        hand.append(deck.pop(0))
     print_cards()
 
 def print_cards():
