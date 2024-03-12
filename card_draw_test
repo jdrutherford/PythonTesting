@@ -6,7 +6,8 @@ error_count = 0
 
 def draw_card(num):
     for i in range(int(float(num))) :
-        hand.append([deck.pop(0)])
+        hand.append(deck.pop(0)2
+                    )
     print_cards()
 
 def print_cards():
